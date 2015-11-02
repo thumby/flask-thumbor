@@ -38,7 +38,10 @@ Or if you want to initialize later:
 
 Using it in your templates is very simple:
 
-    <img src="{{ thumbor(width=300, height=200, smart=True, image_url="http://my.com/img.jpg") }}" />
+    <img src="{{ thumbor(
+            width=300, height=200, smart=True,
+            image_url="http://my.com/img.jpg")
+        }}" />
 
 Any of the options supported by [libthumbor](https://github.com/thumbor/libthumbor) are available.
 
